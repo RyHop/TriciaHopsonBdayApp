@@ -6,46 +6,78 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="#FFEB3B"
+    android:background="#424242"
     tools:context="com.example.ryan.triciahopson.ALovingMother">
 
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:layout_alignParentTop="true"
-        android:src="@drawable/ccc"
-        android:scaleType="center"
-         />
 
     <TextView
         android:id="@+id/Description"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_alignBottom="@+id/imageView"
         android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginBottom="23dp"
-        android:text="For you Mom"
-        android:textStyle="bold" />
+        android:text="-Ryan"
+        android:textStyle="bold"
+        android:textColor="#FFFFFF"/>
 
     <TextView
-        android:id="@+id/HappyBirthday"
+        android:id="@+id/loveYou"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_alignTop="@+id/imageView"
         android:layout_centerHorizontal="true"
         android:layout_centerVertical="true"
         android:layout_marginTop="22dp"
         android:fontFamily="sans-serif-black"
-        android:text="Happy Birthday!!!"
-        android:textColor="#000000"
+        android:text="We will always love you!!!"
+        android:textColor="#D32F2F"
         android:textSize="30sp"
-        android:textStyle="bold" />
+        android:textStyle="italic"
+       />
+
+    <GridLayout
+        android:layout_width="240dp"
+        android:layout_height="240dp"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true">
+
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:rotation="90"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/kennedi" />
+
+        <ImageView
+            android:id="@+id/imageView2"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="1"
+            android:layout_row="0"
+            android:rotation="90"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/dewayne" />
+
+        <ImageView
+            android:id="@+id/imageView3"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="0"
+            android:layout_row="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/stephen" />
+        <ImageView
+            android:id="@+id/imageView4"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            android:layout_column="1"
+            android:layout_row="1"
+            android:scaleType="fitXY"
+            app:srcCompat="@drawable/me"/>
+    </GridLayout>
 
 </RelativeLayout>
